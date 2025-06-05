@@ -13,4 +13,13 @@ describe('ProductDetailGuard', () => {
   it('should be created', () => {
     expect(guard).toBeTruthy();
   });
+  beforeEach(() => {
+    TestBed.configureTestingModule({});
+    guard = TestBed.inject(ProductDetailGuard);
+  });
+
+  it('should be created', () => {
+    expect(guard).toBeTruthy();
+  });
+  
 });
